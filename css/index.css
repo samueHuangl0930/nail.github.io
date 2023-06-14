@@ -18,14 +18,16 @@ body {
     align-items: center;
     position: relative;
     margin-bottom: 20px;
+    padding-top: 15px;
+}
+.banner img{
+    width: 40%;
 }
 
 .banner p {
     font-size: 25px;
     font-weight: 900;
     color: #CC8797;
-    position: absolute;
-    top: 140px;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
