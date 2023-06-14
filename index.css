@@ -1,0 +1,167 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+p,
+i,
+a {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  color: #71bdbd;
+  font-weight: 900;
+  text-align: justify;
+}
+
+.contain {
+  background-image: linear-gradient(to bottom, #F6F3EE, #FFECEC, #EDC9D1, #E4AABA);
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.banner img {
+  width: 40%;
+}
+
+.banner p {
+  font-size: 25px;
+  color: #CC8797;
+  margin: 10px 0;
+}
+
+.top-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.top-img div {
+  padding: 10px;
+}
+
+.top-img div img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+
+hr {
+  margin: 1rem 0;
+  color: gainsboro;
+  border-top: var(--bs-border-width) solid;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 80%;
+  padding: 1.3rem;
+  min-height: 250px;
+  position: absolute;
+  z-index: 2;
+  top: 5%;
+  right: 5%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+.modal i{
+  color: red;
+}
+.modal .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal .flex p {
+  font-size: 25px;
+  color: black;
+}
+
+.modal p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0.4rem 0 0.2rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn-close {
+  transform: translate(10px, -20px);
+  padding: 0.5rem 0.7rem;
+  background: #eee;
+  border-radius: 50%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.click {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.nail-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nail-img div {
+  padding: 10px;
+}
+
+.nail-img div img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+
+a {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #75414d;
+}

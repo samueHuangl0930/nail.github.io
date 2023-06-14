@@ -4,289 +4,225 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap"
-      rel="stylesheet"
-    /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="index.css" />
     <title>首頁</title>
   </head>
   <body>
     <div class="contain">
-      <div class="col-12 banner">
-        <img src="images/logo.png" alt="logo"  />
+      <div class="banner">
+        <img src="images/logo.png" alt="logo" />
         <p>歡迎加入peachnail.tw</p>
       </div>
-      <div class="col-12">
-        <div class="row top-img m-0">
-          <!-- 小技巧 -->
-          <div class="col-4" data-bs-toggle="modal" data-bs-target="#turtle">
-            <img src="images/turtle.jpg" /><i class="hint">小技巧</i>
-          </div>
-          <div
-            class="modal fade"
-            id="turtle"
-            tabindex="-1"
-            aria-labelledby="turtleLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="turtleLabel">小技巧</h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  配戴方法
-                  <ol>
-                    <li>剪短指甲後用小挫條修型</li>
-                    <li>小海綿拋打磨甲面並去除粉塵</li>
-                    <li>酒精棉片清潔甲片</li>
-                    <li>選擇大小合適的果凍膠（黃膠較黏）</li>
-                    <li>果凍膠貼在甲面 按壓服貼</li>
-                    <li>撕下雙面膠 用吹風機加熱</li>
-                    <li>黏貼至甲面 再大力按壓就完成</li>
-                  </ol>
-                  <ol>
-                    <li>將果凍膠泡溫水5分鐘</li>
-                    <li>小木棒慢慢翹進甲片與真甲之間</li>
-                    <li>慢慢剝去甲片殘膠小木棒捲起</li>
-                    <li>溫水沖洗乾淨 以便下次利用</li>
-                  </ol>
-                  <hr />
-                  別用酒精棉片擦拭穿戴甲 甲片會變脆弱 配戴後3-4小時不建議碰水！
-                  有任何問題歡迎聯繫 @peachnail.tw
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- 公告 -->
-          <div
-            class="col-4"
-            data-bs-toggle="modal"
-            data-bs-target="#announcement"
-          >
-            <img src="images/both.jpg" /> <i class="hint">公告</i>
-          </div>
-          <div
-            class="modal fade"
-            id="announcement"
-            tabindex="-1"
-            aria-labelledby="announcementLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="announcementLabel">公告</h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  盲盒
-                  <ul>
-                    <li>價格：一副$350 三副$1000</li>
-                    <li>
-                      甲型尺寸：
-                      <ol>
-                        <li>長水滴S／M</li>
-                        <li>中杏仁S／M／L</li>
-                        <li>短方圓XS／S／M／L</li>
-                      </ol>
-                    </li>
-                    <i>（風格可許願）</i>
-                  </ul>
-                  現成品
-                  <ul>
-                    <li>價格：$400-$800</li>
-                    <i>（貼文會標示甲型尺寸）</i>
-                  </ul>
+      <section class="modal modal1 hidden">
+        <div class="flex">
+          <p>小技巧</p>
+          <button class="btn-close btn-close1">⨉</button>
+        </div>
+        <hr />
+        <div>
+          配戴方法
+          <ol>
+            <li>剪短指甲後用小挫條修型</li>
+            <li>小海綿拋打磨甲面並去除粉塵</li>
+            <li>酒精棉片清潔甲片</li>
+            <li>選擇大小合適的果凍膠（黃膠較黏）</li>
+            <li>果凍膠貼在甲面 按壓服貼</li>
+            <li>撕下雙面膠 用吹風機加熱</li>
+            <li>黏貼至甲面 再大力按壓就完成</li>
+          </ol>
+          卸除方法
+          <ol>
+            <li>將果凍膠泡溫水5分鐘</li>
+            <li>小木棒慢慢翹進甲片與真甲之間</li>
+            <li>慢慢剝去甲片殘膠小木棒捲起</li>
+            <li>溫水沖洗乾淨 以便下次利用</li>
+          </ol>
+          <hr />
+          別用酒精棉片擦拭穿戴甲 甲片會變脆弱 配戴後3-4小時不建議碰水！
+          有任何問題歡迎聯繫 @peachnail.tw
+        </div>
+      </section>
 
-                  客製化
-                  <ul>
-                    <li>
-                      甲型尺寸：
-                      <ol>
-                        <li>長水滴S／M</li>
-                        <li>中杏仁S／M／L</li>
-                        <li>短方圓XS／S／M／L</li>
-                      </ol>
-                    </li>
-                    <i>價格：$600-$1000</i>
-                  </ul>
+      <section class="modal modal2 hidden">
+        <div class="flex">
+          <p>公告</p>
+          <button class="btn-close btn-close2">⨉</button>
+        </div>
+        <hr />
+        <div>
+          盲盒
+          <ul>
+            <li>價格：一副$350 三副$1000</li>
+            <li>
+              甲型尺寸：
+              <ol>
+                <li>長水滴S／M</li>
+                <li>中杏仁S／M／L</li>
+                <li>短方圓XS／S／M／L</li>
+              </ol>
+            </li>
+            <i>（風格可許願）</i>
+          </ul>
+          現成品
+          <ul>
+            <li>價格：$400-$800</li>
+            <i>（貼文會標示甲型尺寸）</i>
+          </ul>
 
-                  <hr />
-                  購買贈工具組
-                  <ul>
-                    <li>果凍膠*2（黃&透明）</li>
-                    <li>酒精棉片*2 、小木棍、小挫條、小海綿拋</li>
-                    <li>凡是購買甲片都會收到小禮物</li>
-                    <li>工具組加購：$20／組</li>
-                    <li>小盒裝加購：$30／盒</li>
-                    <li>黃色果凍膠：$10／張</li>
-                  </ul>
+          客製化
+          <ul>
+            <li>
+              甲型尺寸：
+              <ol>
+                <li>長水滴S／M</li>
+                <li>中杏仁S／M／L</li>
+                <li>短方圓XS／S／M／L</li>
+              </ol>
+            </li>
+            <i>價格：$600-$1000</i>
+          </ul>
 
-                  <hr />
-                  訂購方式
-                  <ul>
-                    <li>7-11賣貨便 $35運費</li>
-                    <li>忠孝敦化、輔仁大學可預約時段面交</li>
-                  </ul>
-                  以下均為出貨時間
-                  <ul>
-                    <li>三副內7-10天出貨</li>
-                    <li>三副以上10-20天出貨</li>
-                    <li>急單：+$150／副（約2-3天寄出）</li>
-                    <strong>不包含六日物流天數</strong
-                    ><br />
-                    <strong>完美主義者無法接受 勿下單</strong
-                    ><br />
-                    <strong>棄單將列入黑名單</strong>
-                  </ul>
+          <hr />
+          購買贈工具組
+          <ul>
+            <li>果凍膠*2（黃&透明）</li>
+            <li>酒精棉片*2 、小木棍、小挫條、小海綿拋</li>
+            <li>凡是購買甲片都會收到小禮物</li>
+            <li>工具組加購：$20／組</li>
+            <li>小盒裝加購：$30／盒</li>
+            <li>黃色果凍膠：$10／張</li>
+          </ul>
 
-                  退換貨問題
-                  <ul>
-                    <li>商品因燈光問題等 拍攝多少有落差</li>
-                    <li>有任何問題都可以先私訊替您處理</li>
-                    <li>店內所有甲片均為定制 售出即不能退換</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- 介紹 -->
-          <div class="col-4" data-bs-toggle="modal" data-bs-target="#introduce">
-            <img src="images/bear.jpg" /> <i class="hint">介紹</i>
-          </div>
-          <div
-            class="modal fade"
-            id="introduce"
-            tabindex="-1"
-            aria-labelledby="introduceLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="introduceLabel">介紹</h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  什麼是無痕穿戴甲❔
-                  <ul>
-                    <li>將美甲根據個人需求和尺寸量身定做</li>
-                    <li>像飾品一樣 方便不同場合配戴</li>
-                    <li>果凍膠建議3-5天卸除～</li>
-                    <li>一副贈送兩張果凍膠 黃色黏性較為牢固</li>
-                  </ul>
-                  穿戴美甲的特點❕
-                  <ul>
-                    <li>隨意更換、拆卸方便、可自用或贈送朋友</li>
-                    <li>桃家選用最好的甲片 根據您的指甲定制</li>
-                    <li>無需面對面操作 也不接觸紫外線照燈</li>
-                    <li>可一次訂做多種款式更換 皆不傷本甲</li>
-                    <li>環保可重復使用 孕婦小孩都能放心佩戴</li>
-                  </ul>
-                  款式顏色選擇❔
-                  <ul>
-                    <li>客製的色系及風格都會經由討論再製作</li>
-                    <li>桃家有眾多顏色供大家選擇</li>
-                    <li>日後會陸續發佈在貼文上 歡迎關注</li>
-                  </ul>
-                  <hr />
-                  <ul>
-                    <li>
-                      適合人群： 平日比較忙沒時間到店 或職業限制人群
-                      比如：模特、表演者、學生、醫生護士、
-                      餐飲服務、孕婦、哺乳期媽媽等
-                      或喜歡經常更換款式又怕傷指甲的桃寶們 若隔天要約會
-                      就不用再擔心指甲醜醜的
-                    </li>
-                    <li>
-                      關於牢固度： 穿戴甲的特點就是拆卸方便
-                      請別按照實體美甲店的標準要求穿戴甲
-                      因為穿戴甲就是能重複使用的！
-                    </li>
-                  </ul>
-                  <hr />
-                  <i>限時標記滿24小時 下次回購折$20 訂購穿戴甲都會贈送小禮物</i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p class="m-0 p-0">
-            <img src="images/finger.svg" />點擊上方圖片查看詳細資訊
-          </p>
+          <hr />
+          訂購方式
+          <ul>
+            <li>7-11賣貨便 $35運費</li>
+            <li>忠孝敦化、輔仁大學可預約時段面交</li>
+          </ul>
+          以下均為出貨時間
+          <ul>
+            <li>三副內7-10天出貨</li>
+            <li>三副以上10-20天出貨</li>
+            <li>急單：+$150／副（約2-3天寄出）</li>
+            <i>不包含六日物流天數</i
+            ><br />
+            <i>完美主義者無法接受 勿下單</i
+            ><br />
+            <i>棄單將列入黑名單</i>
+          </ul>
+
+          退換貨問題
+          <ul>
+            <li>商品因燈光問題等 拍攝多少有落差</li>
+            <li>有任何問題都可以先私訊替您處理</li>
+            <li>店內所有甲片均為定制 售出即不能退換</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="modal modal3 hidden">
+        <div class="flex">
+          <p>介紹</p>
+          <button class="btn-close btn-close3">⨉</button>
+        </div>
+        <hr />
+        <div>
+          什麼是無痕穿戴甲❔
+          <ul>
+            <li>將美甲根據個人需求和尺寸量身定做</li>
+            <li>像飾品一樣 方便不同場合配戴</li>
+            <li>果凍膠建議3-5天卸除～</li>
+            <li>一副贈送兩張果凍膠 黃色黏性較為牢固</li>
+          </ul>
+          穿戴美甲的特點❕
+          <ul>
+            <li>隨意更換、拆卸方便、可自用或贈送朋友</li>
+            <li>桃家選用最好的甲片 根據您的指甲定制</li>
+            <li>無需面對面操作 也不接觸紫外線照燈</li>
+            <li>可一次訂做多種款式更換 皆不傷本甲</li>
+            <li>環保可重復使用 孕婦小孩都能放心佩戴</li>
+          </ul>
+          款式顏色選擇❔
+          <ul>
+            <li>客製的色系及風格都會經由討論再製作</li>
+            <li>桃家有眾多顏色供大家選擇</li>
+            <li>日後會陸續發佈在貼文上 歡迎關注</li>
+          </ul>
+          <hr />
+          <ul>
+            <li>
+              適合人群： 平日比較忙沒時間到店 或職業限制人群
+              比如：模特、表演者、學生、醫生護士、 餐飲服務、孕婦、哺乳期媽媽等
+              或喜歡經常更換款式又怕傷指甲的桃寶們 若隔天要約會
+              就不用再擔心指甲醜醜的
+            </li>
+            <li>
+              關於牢固度： 穿戴甲的特點就是拆卸方便
+              請別按照實體美甲店的標準要求穿戴甲 因為穿戴甲就是能重複使用的！
+            </li>
+          </ul>
+          <hr />
+          <i>限時標記滿24小時 下次回購折$20 訂購穿戴甲都會贈送小禮物</i>
+        </div>
+      </section>
+      <div class="overlay hidden"></div>
+      <div class="top-img m-0">
+        <!-- 小技巧 -->
+        <div class="btn first-open">
+          <img src="images/turtle.jpg" /><i class="hint">小技巧</i>
         </div>
 
-        <div class="row nail-img m-0">
-          <div class="col-4">
-            <img src="images/girl.jpg" />
-          </div>
-          <div class="col-4">
-            <img src="images/summer.jpg" />
-          </div>
-          <div class="col-4">
-            <img src="images/fairy.jpg" />
-          </div>
-          <div class="col-4">
-            <img src="images/berry.jpg" />
-          </div>
-          <div class="col-4">
-            <img src="images/women.jpg" />
-          </div>
-          <div class="col-4">
-            <img src="images/bubble.jpg" />
-          </div>
-          <div class="col-4">
-            <img src="images/mooth.jpg" />
-          </div>
-          <div class="col-4">
-            <img src="images/gentle.jpg" />
-          </div>
-          <div class="col-4">
-            <img src="images/latté.jpg" />
-          </div>
+        <!-- 公告 -->
+        <div class="btn second-open">
+          <img src="images/both.jpg" /><i class="hint">公告</i>
+        </div>
+        <!-- 介紹 -->
+        <div class="btn third-open">
+          <img src="images/bear.jpg" /><i class="hint">介紹</i>
         </div>
       </div>
+      <p class="click">
+        <img src="images/finger.svg" />點擊上方圖片查看詳細資訊
+      </p>
+      <div class="nail-img">
+        <div>
+          <img src="images/girl.jpg" />
+        </div>
+        <div>
+          <img src="images/summer.jpg" />
+        </div>
+        <div>
+          <img src="images/fairy.jpg" />
+        </div>
+        <div>
+          <img src="images/berry.jpg" />
+        </div>
+        <div>
+          <img src="images/women.jpg" />
+        </div>
+        <div>
+          <img src="images/bubble.jpg" />
+        </div>
+        <div>
+          <img src="images/mooth.jpg" />
+        </div>
+        <div>
+          <img src="images/gentle.jpg" />
+        </div>
+        <div>
+          <img src="images/latte.jpg" />
+        </div>
+      </div>
+      <a href="https://instagram.com/peachnail.tw?igshid=MzRlODBiNWFlZA=="
+        >IG連結：peachnail.tw</a
+      >
     </div>
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-    crossorigin="anonymous"
-  ></script>
+  <script src="./index.js"></script>
 </html>
